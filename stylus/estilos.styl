@@ -1,0 +1,79 @@
+
+@import url(http://fonts.googleapis.com/css?family=Oswald)
+
+@-webkit-keyframes Animacion {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes AnimacionZoonImg {
+  from {
+    transform scaleX(.5) rotate(0deg)
+  
+  }
+  to {
+    transform scaleX(1) rotate(360deg)
+   
+  }
+}
+
+body
+	font-family 'Oswald', sans-serif
+	background-color #2196F3
+
+
+header
+	// background-color #2196F3
+	height 100%
+	width 100%
+	text-align center
+	
+	section
+		button
+			background-color #A5D6A7
+			padding .6em 1.7em
+			font-size .8em
+			border-radius 1.5em
+			border 1px solid #A5D6A7
+			
+.avatar
+	img
+		height 100px
+		width 100px
+		border-radius 50%
+		margin-top 50%
+		-webkit-animation AnimacionZoonImg 2s	
+		
+	span 	
+		p
+			margin 5px	
+			display inline-block
+			color white
+			font-size .8em
+			transition 5s
+			-webkit-animation: Animacion 5s
+		
+		h2
+			font-size 1.2em
+			margin-top .5em
+			margin-bottom .2em
+
+@media screen and (min-width 450px)
+	.avatar
+		img
+			margin-top 6%	
+
+@media screen and (min-width 750px)
+	.avatar
+		img
+			margin-top 30%	
+
+@media screen and (min-width 1000px)
+	.avatar
+		img
+			margin-top 20%					
+		 
+
+
+
+  			
