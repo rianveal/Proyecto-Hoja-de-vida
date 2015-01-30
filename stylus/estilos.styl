@@ -79,14 +79,16 @@ header
 	text-align left
 	.row
 		background-color #F5F5F5
-		width 100%
 		padding-top .5em
 		padding-bottom .5em
-		paddingg-right 2em  
+		paddingg-right 2em
+		padding-left .5em  
 		border-bottom 1px solid #424242
 		&:hover
-			background-color #FFCCBC
-			color #000000		
+			background-color #212121
+			color #FFFFFF
+			box-shadow 0 0 1em #FF6E40
+			transition .5s		
 		
 .perfil
 	img
@@ -105,27 +107,55 @@ header
 			
 				
 @media screen and (min-width 450px)
+	
+	html, body
+		height 100%	
+
+    		
 	.avatar
+		padding-top 50%
 		img
 			margin-top 6%
 	
 	.a-row
-		color blue			
+		color blue
+		.row
+			padding-left 1em			
+	
+	.left
+		float left
+		width 30%
+		height 100%
+		
+	.right
+		float right
+		width 70%
+		height 100%	
+				
 
 @media screen and (min-width 750px)
 	.avatar
 		img
 			margin-top 30%	
 	.a-row
-		color red			
+		color red
+				
 
 @media screen and (min-width 1000px)
+	body
+		height 100%	
+
 	.avatar
 		img
 			margin-top 20%	
 	
 	.a-row
-		color colorOrange							
+		color colorOrange
+		
+
+		
+		
+
 		 
 
 
